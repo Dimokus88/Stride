@@ -3,17 +3,17 @@ version: "2.0"
 
 services:
   app:
-    image: dimokus88/stride:0.0.6
+    image: dimokus88/stride:0.0.19
     
    
     env:
-#1.Private information section, do not share data from this section!Раздел часной информации, неделитесь даннмы из этого раздела!
+#1.Раздел часной информации, неделитесь даннмы из этого раздела!
      - "my_root_password=" # пароль root для подключения по ssh
-     - "MONIKER=" #Имя ноды (Если нетрудно, укажите в имени ноды Akash, например:DimokusAkash). Node name (If it is not difficult, specify Akash in the node name, for example:DimokusAkash). 
-     - "MNEMONIC=" # seed phrase from the  wallet. seed фраза от кошелька .
+     - "MONIKER=" # имя ноды
+     - "MNEMONIC=" # seed фраза от тестового кошелька с defund
      - "LINK_KEY=" # link to the posted pirv-validator_key.json (direct download). It will also work from other Cosmos-based testnets. ссылка на размещенный pirv-validator_key.json (прямое скачивание). Подойдет и от других тестнетов на базе Cosmos.
 #==================================================================
-#2.Section of variables for node operation.Раздел переменных для работы ноды.
+#2.Раздел переменных для работы ноды
      - "binary=strided"
      - "vers=v0.0.6"
      - "genesis=https://raw.githubusercontent.com/Stride-Labs/testnet/main/poolparty/genesis.json"
@@ -26,8 +26,7 @@ services:
      - "link_seed=https://raw.githubusercontent.com/Dimokus88/Stride/main/SEED"
      #- "link_rpc=https://raw.githubusercontent.com/Dimokus88/Stride/main/state_sync"
      #- "SHIFT=2000"
-     #- "SNAP_RPC=http://stride-node1.poolparty.stridenet.co:26657"
-     - "autodelegate=yes"
+     #- "SNAP_RPC=stride-node1.poolparty.stridenet.co:26657"
      
 #====================================   
     expose:
@@ -46,7 +45,7 @@ services:
       - port: 26657
         as: 26657
         to:
-
+          - global: true
         
 profiles:
   compute:
