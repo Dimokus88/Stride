@@ -15,7 +15,6 @@ services:
 #==================================================================
 #2.Раздел переменных для работы ноды
      - "binary=strided"
-     - "vers=v0.0.6"
      - "genesis=https://raw.githubusercontent.com/Stride-Labs/testnet/main/poolparty/genesis.json"
      - "folder=.stride"
      - "denom=ustrd"
