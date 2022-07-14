@@ -287,26 +287,26 @@ ___
 
 ***collect rewards | собрать реварды***
 
-```strided tx distribution withdraw-rewards <valoper_address> --from <address> --fees 5555utia --commission -y```
+```strided tx distribution withdraw-rewards <valoper_address> --from <address> --fees 5555ustrd --commission -y```
 
-***delegate 1000000utia to yourself | заделегировать себе 1000000utia***
+***delegate 1000000ustrd to yourself | заделегировать себе 1000000ustrd***
 
-```strided tx staking delegate <valoper_address> 1000000utia --from <address> --fees 5555utia -y```
+```strided tx staking delegate <valoper_address> 1000000ustrd --from <address> --fees 5555ustrd -y```
 
-***redelegation to another validator 1000000utia | ределегирование на другого валидатора 1000000utia***
+***redelegation to another validator 1000000ustrd | ределегирование на другого валидатора 1000000ustrd***
 
-```strided tx staking redelegate <src-validator-addr> <dst-validator-addr> 1000000utia --from <address> --fees 5555utia -y```
+```strided tx staking redelegate <src-validator-addr> <dst-validator-addr> 1000000ustrd --from <address> --fees 5555ustrd -y```
 
-***unbond 1000000utia | снять с делегации 1000000utia***
+***unbond 1000000ustrd | снять с делегации 1000000ustrd***
   
-```strided tx staking unbond <addr_valoper> 1000000utia --from <name_wallet> --fees 5555utia -y```
+```strided tx staking unbond <addr_valoper> 1000000ustrd --from <name_wallet> --fees 5555ustrd -y```
 
-***send 1000000utia to another address | отправить 1000000utia на другой адрес***
+***send 1000000ustrd to another address | отправить 1000000ustrd на другой адрес***
 
-```strided tx bank send <name_wallet> <address> 1000000utia --fees 5555utia -y```
+```strided tx bank send <name_wallet> <address> 1000000ustrd --fees 5555ustrd -y```
 
 ***vote "yes" for the proposal №65 | проголосовать "yes" по предложению №65***
 
-```strided tx gov vote 65 yes --from <name_wallet> --fees 5550utia```
+```strided tx gov vote 65 yes --from <name_wallet> --fees 5550ustrd```
 ___
 
