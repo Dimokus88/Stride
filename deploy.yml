@@ -7,7 +7,7 @@ services:
     
    
     env:
-#1.Раздел часной информации, неделитесь даннмы из этого раздела!
+#1.Раздел часной информации, неделитесь даными из этого раздела!
      - "my_root_password=" # пароль root для подключения по ssh
      - "MONIKER=" # имя ноды
      - "MNEMONIC=" # seed фраза от тестового кошелька с defund
@@ -22,10 +22,10 @@ services:
      - "gitrep=https://github.com/Stride-Labs/stride.git"
      - "gitfold=stride"
      - "link_peer=https://raw.githubusercontent.com/Dimokus88/Stride/main/PEER"
-     - "link_seed=https://raw.githubusercontent.com/Dimokus88/Stride/main/SEED"
-     #- "link_rpc=https://raw.githubusercontent.com/Dimokus88/Stride/main/state_sync"
-     #- "SHIFT=2000"
-     #- "SNAP_RPC=stride-node1.poolparty.stridenet.co:26657"
+     #- "link_seed=https://raw.githubusercontent.com/Dimokus88/Stride/main/SEED"
+     - "link_rpc=https://raw.githubusercontent.com/Dimokus88/Stride/main/state_sync"
+     - "SHIFT=2000"
+     - "SNAP_RPC=v1odj6fasl8qnekhqih0brqfo4.palmito.duckdns.org:31388"
      
 #====================================   
     expose:
