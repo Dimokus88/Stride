@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   app:
-    image: dimokus88/stride:0.0.19
+    image: dimokus88/universe:0.1.0
     
    
     env:
